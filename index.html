@@ -7,83 +7,67 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
         <div class="left-items">
             <div class="img">
-                <img src="./image/luke-stackpoole-5Qqkjn4PFPA-unsplash.jpg"height="950" width="700" alt="sky image">
+                <img src="./image/luke-stackpoole-5Qqkjn4PFPA-unsplash.jpg"height="980" width="700" alt="sky image">
             </div>
         </div>
 
 
-        <div class="right-items">
-            <div class="first-container">
+        <div id="right-items">
+            <div id="top-container">
                 <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!</p>
                 <p>Sign up <em>now</em> to get started.</p>
                 <p>You <em>know</em> you want to.</p>
             </div>
 
-            <div class="form-container">
-                <form action="#" method="post">
-                    <p class="form-title">Let's do this!</p>
+            <form action="#">
 
-                    <div class="input" style="float:left;">
-                        <div>
-                            <label for="first-name">First name</label>
+                <div id="mid-container">
+                    <h2>Lets do this!</h2>
+
+                    <div class="input-row">
+                        <div class="input">
+                            <label for="first-name">*First Name</label>
+                            <input type="text" id="first-name" name="first-name" minlength="2" maxlength="20" placeholder="John" required>
                         </div>
-                        <input type="text" name="first-name" id="first-name" required >
-                    </div>
-
-
-                    <div class="input">
-                        <div>
-                            <label for="last-name">Last name</label>
+                        <div class="input">
+                            <label for="last-name">*Last Name</label>
+                            <input type="text" id="last-name" name="last-name" minlength="2" maxlength="20" placeholder="Smith" required>
                         </div>
-                        <input type="text" name="last-name" id="last-name" required>
                     </div>
 
-                    
-                    <div class="input" style="float:left;">
-                        <div>
-                            <label for="email">Email</label>
+                    <div class="input-row">
+                        <div class="input">
+                            <label for="email">*Email</label>
+                            <input type="email" id="email" name="email" minlength="3" maxlength="50" placeholder="john@smith.com" required>
                         </div>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-
-                    
-                    <div class="input">
-                        <div>
-                            <label for="phone-number">Phone number</label>
+                        <div class="input">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="444-444-4444">
                         </div>
-                        <input type="number" name="phone-number" id="phone-number" minlength="9" maxlength="9" required>
                     </div>
 
-                    
-                    <div class="input" style="float:left;">
-                        <div>
-                            <label for="password">Password</label>
+                    <div class="input-row">
+                        <div class="input">
+                            <label for="password">*Password</label>
+                            <input type="password" id="password" name="password" minlength="6" maxlength="20" placeholder=" " required>
+                            <span id="passError"></span>
                         </div>
-                        <input type="password" name="password" id="password" required>
-                    </div>
-
-
-                    <div class="input">
-                        <div>
-                            <label for="confirm-password">Confirm password</label>
+                        <div class="input">
+                            <label for="confirm-password">*Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password" minlength="6" maxlength="20" placeholder=" " required>
+                            <span id="confirmError"></span>
                         </div>
-                        <input type="password" name="confirm-password" id="confirm-password" required>
                     </div>
 
-
-                    <div class="right-button-items">
-                        <button type="submit">Create Account</button>
-                    </div>
-                </form>
+                </div>
                 
-            </div>
-            <div class="last-container">
-                <p class="button-text">Already have an account? <a href="#">Log in</a></p>
-            </div>    
-        </div>
-    </div>
+                <div id="bottom-container">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </div>
+            </form>
+            
 </body>
 </html>

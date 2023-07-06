@@ -1,60 +1,26 @@
+:root{
+  font-family: sans-serif;
+  --hover-color: rgb(8, 109, 224);
+}
 
-/*base content alignment styling*/
-.main{
-    display:flex;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-  }
-  
-  .first-container{
-    padding-left: 103px;
-    padding-top: 250px;
-  }
-  
-  .form-container{
-    padding-left: 100px;
-    padding-top: 30px;
-  }
-  
-  .form-title{
-    padding-left: 5px;
-  }
-  
-  .right-button-items{
-    padding-top: 40px;
-    padding-left:5px;
-  }
-  
-  .last-container{
-    padding-left: 102px;
-  }
-  
-  
-  
-  /*input field styling*/
-  .input{
-    display: flex;
-    flex-flow: column wrap;
-    margin-right: 40px;
-    padding: 5px;
-  }
-  
-  
-  
-  .input input[type="text"],
-  .input input[type="email"],
-  .input input[type="number"],
-  .input input[type="password"] {
-    width: 350px;
-  }
-  
-  
-  
-  /* left image alignment and style*/
-  
-  
+body,html {
+  min-height: 100vh;
+  display: flex;
+}
 
+#mid-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.158);
+}
+
+#top-container,
+#mid-container,
+#bottom-container{
+  display: flex;
+  flex-direction: column;
+  padding-left: 45px;
+  padding-bottom: 40px;
+  padding-top: 50px;
+}
