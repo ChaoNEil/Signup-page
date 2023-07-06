@@ -34,7 +34,17 @@ img{
   padding-top: 40px;
 }
 
+.input-row{
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
+.input{
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+}
 
 
 #right-items {
