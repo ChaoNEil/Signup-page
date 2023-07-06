@@ -1,6 +1,6 @@
 
 :root{
-  font-family: sans-serif;
+  font-family: 'Press Start 2P', cursive;
   --hover-color: rgb(8, 109, 224);
   --box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
 }
@@ -34,13 +34,7 @@ img{
   padding-top: 40px;
 }
 
-.input{
-  display: block;
-  color:#333;
-  border-radius: 5px;
-  margin-right: 10px;
-  padding: 5px;
-}
+
 
 
 #right-items {
@@ -57,6 +51,7 @@ img{
   flex-direction: column;
   justify-content: center;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.158);
+  background-color: white;
 }
 
 #top-container,
@@ -87,6 +82,28 @@ button:hover {
 }
 
 
+
+
+h2,
+em,
+button {
+    font-weight: bold;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+p,
+a {
+    font-size: 0.9rem;
+}
+
+a {
+  transition: color 0.5s;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 
 /*
