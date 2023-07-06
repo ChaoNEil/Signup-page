@@ -1,6 +1,11 @@
+/*Universal elements / base page */
 
+@font-face {
+  font-family: custom;
+  src: url(./Martian_Mono/MartianMono-VariableFont_wdth\,wght.ttf);
+}
 :root{
-  font-family: 'Press Start 2P', cursive;
+  font-family: custom;
   --hover-color: rgb(8, 109, 224);
   --box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
 }
@@ -15,38 +20,17 @@
   line-height: 1.5;
 }
 
-
-
 body,html {
   min-height: 100vh;
   display: flex;
 }
 
-img{
-  display: flex;
-  background-size: cover;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  height:100%;
-  margin: 1px;
-  padding: 10px;
-  padding-top: 40px;
-}
 
-.input-row{
-  display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
+/*---------------------------------------------------------*/
 
-.input{
-  display: flex;
-  flex-direction: column;
-  padding-right: 50px;
-}
+/*Right side page content stylings:*/
 
-
+/*Right side base styling for alignment*/
 #right-items {
   min-width: 60vw;
   min-height: 100%;
@@ -74,6 +58,19 @@ img{
   padding-top: 60px;
 }
 
+/*form input field stylings*/
+.input-row{
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+}
+
 button{
   border: none;
   border-radius: 5px;
@@ -87,13 +84,58 @@ button{
   background-color: lightskyblue;
 }
 
-button:hover {
-  background-color: var(--hover-color);
+/*Any other style of right*/
+.last-text{
+  font-size: small;
+}
+
+/*---------------------------------------------------------*/
+
+
+/*Left side page content styling:*/
+
+/*Left side base styling for alignment*/
+#left-items{
+  min-width: 40vw; /*puts the image to the left side by 40*/
+  height: 100%;
+  background-image: url("./image/kenny-gaines-YScLVuOv7nU-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 0 2px 2px black;
+  justify-self: flex-end;
+  margin-bottom: 3vh;
+  color:white;
+}
+
+#logo {
+  margin-top: 30vh;
+  background-color: rgba(0, 0, 0, 0.397);
+  text-align: center;
+  color:white;
+}
+
+
+/*Any other style of left*/
+label{
+  font-size: 14px;
 }
 
 
 
+/*---------------------------------------------------------*/
 
+
+/*html tags styling for the whole page*/
 h2,
 em,
 button {
@@ -115,11 +157,24 @@ a {
   font-weight: bold;
 }
 
-#left-items{
-  min-width: 40vw; /*puts the image to the left side by 40*/
-  height: 100%;
-  background-image: url("./image/kenny-gaines-YScLVuOv7nU-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
+/*---------------------------------------------------------*/
+
+
+/*Effects styling*/
+
+button:hover {
+  background-color: var(--hover-color);
 }
+
+
+input:focus {
+  border-color: rgb(78, 160, 255);
+  box-shadow: var(--box-shadow);
+}
+
+
+/*---------------------------------------------------------*/
+
+
+
+
