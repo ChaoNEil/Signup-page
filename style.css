@@ -98,9 +98,9 @@ button{
 #left-items{
   min-width: 40vw; /*puts the image to the left side by 40*/
   height: 100%;
-  background-image: url("./image/kenny-gaines-YScLVuOv7nU-unsplash.jpg");
+  background-image: url("/solaire-dark-souls.gif");
   background-size: cover;
-  background-position: center;
+  background-position: 70%  ;
   display: flex;
   background-repeat: no-repeat;
   flex-direction: column;
@@ -122,6 +122,9 @@ button{
   background-color: rgba(0, 0, 0, 0.397);
   text-align: center;
   color:white;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 70px;
+  font-weight: bolder;
 }
 
 
@@ -130,8 +133,25 @@ label{
   font-size: 14px;
 }
 
+/* unvisited link */
+.footer a:link {
+  color: whitesmoke;
+}
 
+/* visited link */
+.footer a:visited {
+  color: goldenrod;
+}
 
+/* mouse over link */
+.footer a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+.footer a:active {
+  color: rebeccapurple;
+}
 /*---------------------------------------------------------*/
 
 
