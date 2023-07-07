@@ -93,6 +93,12 @@ label{
   font-size: 14px;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"]{
+  width: 420px; /*to make the input fields longer*/
+}
 
 /*---------------------------------------------------------*/
 
