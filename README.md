@@ -1,5 +1,5 @@
 # A simple signup page
-live demo link : coming when it's ready.
+Live demo link : coming when it's ready.
 
 In progress...
 
